@@ -8,6 +8,7 @@ public class MainFlow {
 	public static void main(String[] args) {
 		System.setProperty("webdriver.gecko.driver", "geckodriver.exe");
 		driver= new FirefoxDriver();
+		System.out.println("Opening the browser");
 		driver.get("http://www.retailmenot.com");
 		driver.findElement(By.cssSelector("span.button-close.js-close")).click();
 		driver.findElement(By.linkText("Coupons")).click();
